@@ -2,7 +2,7 @@
 // The function should have a `never` return type because it never successfully returns.
 
 function fail(message: string): never{
-    throw {message: `Error: ${message}`}
+    throw {message: `Uncaught Error: ${message}`}
 }
 
 fail("Something went wrong");
